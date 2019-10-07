@@ -49,7 +49,7 @@ export default {
                  })
                 //  checks and sees if there is an alias on record
                  let ref = db.collection('users').doc(this.slug)
-                 ref.get().then( doc=> {
+                 ref.get().then( doc => {
                      if(doc.exists){
                          this.feedback = 'This alias already exists'
                      } else {
